@@ -1,0 +1,9 @@
+
+var numb1 = 10;
+var numb2 = 20;
+var numb3 = 30;
+
+var numb = numb1
+console.log(numb1 = numb2);
+console.log(numb2 = numb3);
+console.log(numb3 = numb);

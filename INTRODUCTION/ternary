@@ -1,0 +1,24 @@
+let user = 24
+let output = (user<20)?console.log(true):console.log(false)
+
+let name = 23
+output =
+    (name < 15)? console.log(true):
+    (name>20)? console.log(true):
+    (name == 30)? console.log(true): false
+
+    var date = "20/12/2003"
+    let array = date.split("/")
+    console.log(array);
+
+
+array = [1,2,3,4,5,]
+array.push(24)
+array.pop()
+array.shift()
+array.unshift(1)
+array.hg
+console.log(array)
+
+array = [1,"2",3]
+console.log(array)

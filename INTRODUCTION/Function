@@ -1,0 +1,27 @@
+function questions(role){
+    switch(role){
+        case `manager`:
+            return manager
+        
+        case `native`:
+                return native
+        case `priest`:
+                return priest
+    }
+}
+
+
+const manager =(name)=>{
+    return `Hi ${name},what is the core value of the company`
+}
+const native =(name)=>{
+    return `Hi ${name},what is your best programmming language`
+}
+
+const priest =(name)=>{
+    return `Hi ${name},how many children do you have`
+}
+
+let answer = questions("manager")
+console.log(answer("tobi"))
+

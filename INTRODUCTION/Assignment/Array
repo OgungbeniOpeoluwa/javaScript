@@ -1,0 +1,21 @@
+const arrays=()=>{
+    let array = [];
+    for(let count = 0; count < 20; count++){
+        array.push(count+1);
+    }
+    return array;
+}
+let array = arrays();
+console.log(array)
+
+const evenNumber = array.filter((element)=>element % 2 == 0)
+console.log(evenNumber)
+
+
+let multiplication = []
+const multiplyNumbers = array.forEach(element =>{(multiplication.push(element *2))});
+
+console.log(multiplication)
+
+const mapElement = array.map((element)=>[element,element*element])
+console.log(mapElement)

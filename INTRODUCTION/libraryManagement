@@ -1,0 +1,11 @@
+let user = {
+    id:1,
+    available:true,
+    count:10,
+    name:"past tense",
+    author:"Sandra brown"
+
+}
+user.name = "tolu"
+
+console.log(user)

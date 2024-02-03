@@ -1,0 +1,14 @@
+let shpopingList = [
+    {name:'Apples',category:'Fruits',isHealthy:true},
+    {name:'Potatoe chips',category:'Snacks',isHealthy:false},
+    {name:'Carrots',category:'Vegetable',isHealthy:true},
+    {name:'Chocolate Bars',category:'Sweet',isHealthy:false},
+    {name:'Greek Yogurth',category:'Diary',isHealthy:true},
+    {name:'Soda',category:'Brevages',isHealthy:false},
+]
+const newArray = []
+const healthItems = shpopingList.filter((element) => {if(element.isHealthy === true)newArray.push(element)})
+
+console.log(newArray)
+
+const healthItemsName = newArray.forEach((element)=>console.log(element.name))

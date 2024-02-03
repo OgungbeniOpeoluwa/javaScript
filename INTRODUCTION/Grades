@@ -1,0 +1,18 @@
+let grade =[
+    {key:90, key1:100,values:"A"},
+    {key:80, key1:89,values:"B"},
+    {key:70, key1:79,values:"C"},
+    {key:60, key1:69,values:"D"},
+     {key:59, key1:0,values:"F"},
+
+];
+let array =[95,78,85,60,45,92];
+let newArray = []
+
+for (const keys of array) {
+    const arrays = grade.map((element) => {
+        if(keys >= element.key && keys <= element.key1) newArray.push([element.values,keys]) })
+    
+}
+
+console.log(newArray)

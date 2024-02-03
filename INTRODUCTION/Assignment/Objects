@@ -1,0 +1,15 @@
+let profile ={
+    firsname:'ope',
+    lastname:'ayo',
+    cohort:18,
+    sex:'female',
+    bestcolour:'blue',
+    location:'sabo yaba'
+}
+
+console.log("my best colour is "+profile.bestcolour)
+console.log("My name is "+ profile.firsname)
+console.log("My lastName is "+ profile.lastname)
+console.log(profile.sex)
+console.log(profile.cohort)
+console.log(profile.location)

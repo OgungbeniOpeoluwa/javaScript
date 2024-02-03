@@ -1,0 +1,35 @@
+// var x = 10
+// var y = 12
+// var sum = 5 + 6
+// var twice = sum * sum
+// console.log(twice)
+ 
+
+// var z = 5
+// var q = z % 10
+// var result =q + z
+// console.log(result)
+
+// var n = 2
+// var numb = 1
+// for(var count = 0; count < n ; count++){
+//     numb *= 5
+// }
+// console.log(numb)
+
+
+// var a = 72
+// var xx = a + 10
+// var yy = a - 10
+// var zz = a % 10
+
+// var product = xx * yy * zz
+
+// console.log(a/product)
+
+function user(name,age){
+    return {name , age}
+}
+
+let userone = new user("ope",23)
+console.log(userone)

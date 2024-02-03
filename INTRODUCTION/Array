@@ -1,0 +1,74 @@
+raw_array =[[
+    null,
+    {
+    name:"ope",
+    population:10000,
+    temp : 9,
+    currency:"NG"
+},
+{
+    name:"Tolu",
+    population:12300,
+    temp : 18,
+    currency:"Er"
+},{
+    name:"shola",
+    population:125,
+    temp : 2,
+    currency:"Pounds"
+}],
+[{
+    name:"Temi",
+    population:12345,
+    temp : 11,
+    currency:"NG"
+    },
+    {
+    name:"O",
+    population:100,
+    temp : 16,
+    currency:"NG"
+},
+{
+    name:"solomon",
+    population:17,
+    temp : 5,
+    currency:"Er"
+},
+null
+],
+[{
+    name:"isreal",
+    population:117,
+    temp : 10,
+    currency:"NG"
+    },
+    null,
+{
+    name:"tofunmi",
+    population:16,
+    temp : 7,
+    currency:"Er"
+},{
+    name:"marvellous",
+    population:45,
+    temp : 4,
+    currency:"Pounds"
+}]]
+//console.log(raw_array)
+
+let temperature = 10
+let sum = 0;
+for(let count = 0; count < raw_array.length; count++){
+    for (let counts = 0; counts< raw_array[count].length;counts++) {
+        for (const key in raw_array[count][counts]) {
+            if(key==="temp"){
+                if(raw_array[count][counts][key] <= temperature){
+                    sum+=raw_array[count][counts]["population"]
+                }
+            }
+        
+        }
+    }
+}
+console.log(sum)

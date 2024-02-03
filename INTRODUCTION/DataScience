@@ -1,0 +1,26 @@
+let data = [[200,50,300,5],[10,25,7,100],[25,20,70,45],[500,170,11,35]];
+arry = data[1].slice(0,3)
+console.log(arry)
+
+
+
+rawData = data[1].pop()
+console.log(data[1])
+do{
+    array = 5
+    ye = 7
+    array+=ye
+    console.log(array)
+}while(array > 20);
+for (const iterator in data) {
+    console.log(iterator)
+    
+}
+let objects = {
+    firstname:"ope",
+    lastname:"tolu",
+    age:25
+}
+for (let key in objects) {
+    console.log(objects[key])
+}

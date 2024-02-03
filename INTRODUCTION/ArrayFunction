@@ -1,0 +1,11 @@
+let array = [1,2,4,5,9];
+
+const numb = array.filter((x) => x<3)
+
+console.log(numb)
+
+let maps = [2,3,4,5]
+
+const mapper = maps.map((y) => {y*y,y})
+
+console.log(mapper)

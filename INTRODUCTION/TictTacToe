@@ -1,0 +1,44 @@
+var length = 3;
+var width = 3;
+var gameObject =[
+    {row:0,col:0,value:"x"},
+    {row:0,col:1,value:"x"}, 
+    {row:0,col:2,value:"o"},
+    {row:1,col:0,value:"o"},
+    {row:1,col:2,value:"o"},
+    {row:2,col:0,value:"x"},
+    {row:2,col:1,value:"o"},
+    {row:2,col:2,value:"o"},
+]
+
+const generate = (length,width,objects)=>{
+    let array = [[],[],[]];
+    let result = 0;
+    for(let count= 0; count < length; count++){
+        for(let counter = 0; counter < width; counter++){
+            if(objects[result] === undefined){
+                result -=1;
+                let values = objects[result].value;
+                array[count][counter] = values;
+                break;
+            }
+            if(objects[result].col !== counter){
+                console.log(count,counter)
+                array[count][counter] = "";
+                continue;
+            }
+            let values = objects[result].value;
+            array[count][counter] = values;
+            result+=1;
+        
+        }
+    }
+    return array;
+    
+}
+
+
+
+
+console.log(gameObject[0].value)
+console.log(generate(length,width,gameObject))
