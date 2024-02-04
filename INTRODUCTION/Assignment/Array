@@ -19,3 +19,6 @@ console.log(multiplication)
 
 const mapElement = array.map((element)=>[element,element*element])
 console.log(mapElement)
+
+
+//seen
